@@ -5,7 +5,7 @@ function setup() {
   //fill(0);
   //stroke(255);
   slider = createSlider(10,100,50);
-  console.log("Hello");
+  console.log("Hello, there...");
 }
 
 function draw() {
