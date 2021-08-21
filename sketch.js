@@ -4,14 +4,15 @@ function setup() {
   noFill();
   //fill(0);
   //stroke(255);
+  slider = createSlider(10,100,50);
   console.log("Hello");
 }
 
 function draw() {
+  background(0);
+  stroke(255);
+  strokeWeight(10);
   // put drawing code here
   console.log("drawing...");
-  for (var i = 0; i <= 5; i++) {
-    line(0, 0, i*20, 100);
-    line(100, 0, i*20, 100);
-  }
+  ellipse(width/2,height/2,slider.value(),slider.value());
 }
